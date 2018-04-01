@@ -23,4 +23,6 @@ Then we look back at `main` code in `IDA` we can see
 
 ![1](https://github.com/GHAFRI/Writeups/blob/master/Reversing/0CTF%202018%20Quals/1.png)
 
+which means the flag is a `long integer` however to get to this point we have alot of Errors and Exists
+
 
