@@ -16,7 +16,7 @@ You gave me: hello
 		...I'm waiting for something different...
 ```
 
-So, we begin by importing it to `IDA 32`. This is the `main` function by excuting `F5`.
+So, we begin by importing it to `IDA 32`. We check the `main` function by excuting `F5`.
 ```
 int __cdecl main(int argc, const char **argv, const char **envp)
 {
