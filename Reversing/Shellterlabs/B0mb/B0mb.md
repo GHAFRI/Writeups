@@ -1,9 +1,9 @@
 # B0mb
-
+```
 Once more we need your help to deactivate a bomb. We got the software that is being executed inside the bomb.
 Can you figure out the sequence of numbers to defuse the bomb? Be careful!
-
-#Solution
+```
+## Solution
 
 We check the file format by `file <name>` and we see `ELF 64-bit LSB shared object, x86-64`
 Now, we run it by `./<name>` and we get this
@@ -13,10 +13,7 @@ Now, we run it by `./<name>` and we get this
 [+] Enter the first number:
 ```
 
-If we enter a random number we get
-`[BOOM] You're dead x.x!`
-and then we exit.
-
+If we enter a random number we get `[BOOM] You're dead x.x!` and then we exit.
 So, we import it to `IDA 64` and we inspect the `main` function by pressing `F5`
 
 ```
