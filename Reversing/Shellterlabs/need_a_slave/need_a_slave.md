@@ -22,7 +22,7 @@ int __cdecl main(int argc, const char **argv, const char **envp)
 }
 ```
 If we look at `armstrong`,`fibonacci` and `foo` functions we can see hidden code that contain ASCII code.
-If we back at the first 2 they contain garbage ASCII but `foo` has genuine ASCII.
+If we look back at the first 2 they contain garbage ASCII but `foo` has genuine ASCII.
 We convert the ASCII in order we get `fIW!unY0IB3vcom3MySl@e` but if we order it like this
 ```
 byte_804A313 = 117;
