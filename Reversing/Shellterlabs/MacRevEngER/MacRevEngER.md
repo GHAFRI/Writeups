@@ -84,8 +84,9 @@ x00 x00 x00 x70 x61 x73 x74 x65 x62 x69 x00
 x00 x00 x00 x6e x2e x63 x6f x6d x2f x36 x00
 x00 x00 x00 x4e x51 x70 x51 x48 x73 x78 x00
 ```
-which is hex, so we convert it to text we get `pastebin.com/6NQpQHsx` (remove the invalid characters inbetween)
-If we check the site we get `rev_basic_c_cryptorave2017` which is not the flag. Cryptorave has a flag format so the correct flag is CR2017{rev_basic_c_cryptorave2017}.
+which is hex, so we convert it to text we get `pastebin.com/6NQpQHsx` (remove the invalid characters inbetween).
+If we check the site we get `rev_basic_c_cryptorave2017` which is not the flag. 
+Cryptorave has a flag format so the correct flag is `CR2017{rev_basic_c_cryptorave2017}`.
 
 
 
