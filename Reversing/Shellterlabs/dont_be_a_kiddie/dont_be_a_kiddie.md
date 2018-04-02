@@ -41,9 +41,10 @@ int __cdecl main(int argc, const char **argv, const char **envp)
 }
 ```
 Everything that happens in the `main` function is useless and wont generate anything. 
-Even when we check the functions on the rightsuch as `key`, `footsteps` and `skull` are just text jokes.
+Even when we check the functions on the right such as `key`, `footsteps` and `skull` are just text jokes.
 The real key is the function `reveal` and the function that calls it is `flag` so we had to call it in the main function.
-In `main` we see `puts("\n");` so lets replace that with the function, to do that we swithc back to the `IDA View-A` tab then we look up the `call    _puts`.
+In `main` we see `puts("\n");` so lets replace that with the function.
+To do that we switch back to the `IDA View-A` tab then we look up the `call    _puts`.
 The we go to `Edit -> Patch Program -> Assemble` and change it to `call    flag`.
 Now we need to save by `Edit -> Patch Program -> Apply Patches to input file.`
 Lets run it again and we see
