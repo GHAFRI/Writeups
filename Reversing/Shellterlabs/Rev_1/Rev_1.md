@@ -12,7 +12,7 @@ Format: R00T _ @ _ RSi {su4_fl4g}
 We start of by checking the file format by `file <name>` and we see `Java archive data (JAR)`.
 We run it and we get this
 
-![1]()
+![1](https://github.com/GHAFRI/Writeups/blob/master/Reversing/Shellterlabs/Rev_1/1.png)
 
 It seems like a messaging app that has a login and register form.
 To decompile `Jar` files we use [Jadx](https://github.com/skylot/jadx).
