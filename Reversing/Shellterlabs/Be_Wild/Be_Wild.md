@@ -36,10 +36,9 @@ printf(
   return 0;
 }
 ```
-Which the flag is the output of `%ls` which is a `wie char`. We looking everywhere in the debugger for any signs of the flag but we couldnt detect it.
-Instead, we used the `NOP` solution. We thought of removing the `if ( !wcscmp(s1, &ws) )` by `Edit -> Patch Program -> Assemble` then we just replace the `jnz     short loc_400784` with 2 `nop`
+Which the flag is the output of `%ls` which is a `wide char`. We tried looking everywhere in the debugger for any signs of the flag but we couldnt detect it.
+Instead, we used the `NOP` solution. We thought of removing the `if ( !wcscmp(s1, &ws) )` by `Edit -> Patch Program -> Assemble` then we just replace the `jnz     short loc_400784` with 2 `nop`.
 This basically just removes the comparision out of the way and display's the flag for us.
-so we get 
 ```
   fgetws(&ws, 29, _bss_start);
   wcscmp(s1, &ws);
