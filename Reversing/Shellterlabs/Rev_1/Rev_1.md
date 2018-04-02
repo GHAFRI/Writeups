@@ -16,7 +16,7 @@ We run it and we get this
 
 It seems like a messaging app that has a login and register form.
 To decompile `Jar` files we use [Jadx](https://github.com/skylot/jadx).
-If we look at the `Login` class we see 2 classes and a cipher function
+If we look at the `Login` class we see 2 classes and a `cipher` function
 ```
 	public static String m2u(String str) {
         return Login_Page.cipher("ebbg@efv");
