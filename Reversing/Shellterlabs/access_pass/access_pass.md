@@ -50,4 +50,4 @@ v17 = &argc;
 ```
 
 We see an if statment that compares what we `input` as `args` with variable `v16` which equals `666`. 
-Therefore, if we run `./brn 666` we get `Tome sua flag: r3v3rs3_3ng`. The flag is `shellter{r3v3rs3_3ng}`
+Therefore, if we run `./brn 666` we get `Tome sua flag: r3v3rs3_3ng`. The flag simply is `shellter{r3v3rs3_3ng}`
