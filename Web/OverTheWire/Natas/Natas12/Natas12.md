@@ -70,8 +70,7 @@ Choose a JPEG to upload (max 1KB):<br/>
 We see that the file gets a random `path` from the function `makeRandomPath()` and `name` from `genRandomString()`.
 Down we also see `<? print genRandomString(); ?>.jpg` which was also presented in `index.php` webpage. 
 This is an LFI type of attack, for extra details check [trialofbits](https://vimeo.com/32509769).
-A tpical PHP line to exploit check: <? echo system(\" ls; \") ?>
-Now lets make a `php` line hidden in a `jpg`. 
+A tpical PHP line to exploit: <? echo system(\" ls; \") ?> and hide it in a `.jpg`. 
 To do that we use: `echo "string " > name.jpg`.
 So, we use `echo "<? echo system(\" ls \"); ?>" > 1.jpg`.
 Now we go back to the site and upload the image file.
