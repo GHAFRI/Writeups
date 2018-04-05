@@ -1,6 +1,6 @@
 # [Natas 12](http://natas12.natas.labs.overthewire.org/)
 
-![1](https://github.com/GHAFRI/Writeups/tree/master/Web/OverTheWire/Natas/Natas12/1.png)
+![1](https://github.com/GHAFRI/Writeups/blob/master/Web/OverTheWire/Natas/Natas12/1.png)
 
 ## Solution
 
