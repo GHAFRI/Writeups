@@ -1,6 +1,6 @@
 # [Natas 12](http://natas12.natas.labs.overthewire.org/)
 
-![0](https://github.com/GHAFRI/Writeups/blob/master/Web/OverTheWire/Natas/Natas12/0.png)
+![0](https://github.com/GHAFRI/Writeups/blob/master/Web/OverTheWire/Natas/Natas13/0.png)
 
 ## Solution
 
@@ -23,11 +23,11 @@ $err=$_FILES['uploadedfile']['error'];
 Here they are checking the `file size` and making sure that the file is completely a `.jpg`.
 
 To change the `file signature` we just import the same image we used for `Natas12` then we import it to [HxD](https://mh-nexus.de/en/hxd/) hex editor.
-![1](https://github.com/GHAFRI/Writeups/blob/master/Web/OverTheWire/Natas/Natas12/1.png)
+![1](https://github.com/GHAFRI/Writeups/blob/master/Web/OverTheWire/Natas/Natas13/1.png)
 We see that the file has no file signature for a `.jpg` so to add one we copy our signature `FF D8 FF DB` and then go to `Edit -> Paste Insert` we end up with
-![2](https://github.com/GHAFRI/Writeups/blob/master/Web/OverTheWire/Natas/Natas12/2.png)
+![2](https://github.com/GHAFRI/Writeups/blob/master/Web/OverTheWire/Natas/Natas13/2.png)
 Since we need the passcode for the next challange, we just change `Natas13` to `Natas14` too.
-![3](https://github.com/GHAFRI/Writeups/blob/master/Web/OverTheWire/Natas/Natas12/3.png)
+![3](https://github.com/GHAFRI/Writeups/blob/master/Web/OverTheWire/Natas/Natas13/3.png)
 Now we save it and repeat the same uploading steps in `Natas12`, this time we get
 ```
 ����Lg96M10TdfaPyVBkJdjymbllQ5L6qdl1 
