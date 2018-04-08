@@ -1,2 +1,5 @@
 # Writeups
-A couple of write-ups on solved CTF competitions.
+A couple of write-ups on CTF competitions.
+
+[X] Completed:
+[ ] Not Completed:
