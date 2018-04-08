@@ -32,7 +32,7 @@ After this code, we will recieve a URL error
 ValueError: unknown url type: 'flag{QR_Rules_Everything_Around_Me_QREAM}'
 ```
 
-Simply, the flag is `flag{QR_Rules_Everything_Around_Me_QREAM}
+Simply, the flag is `flag{QR_Rules_Everything_Around_Me_QREAM}`
 
 ### What I learned
 
