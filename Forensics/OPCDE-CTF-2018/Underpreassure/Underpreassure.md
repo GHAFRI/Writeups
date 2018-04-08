@@ -21,7 +21,7 @@ It seems like a `file code`, so we take `decode` it again, but this time into a 
 ```
 .‹..·.ÝX..compressed.KËIL¯vÎÏ-(2..Î4È‹OÌs‰wÍK6HÉÌs.O.J.OÉts3.2Î+‰/ÉÈôK7.å...¿..4...
 ```
-.<. is a file signature for a `gzip` compression, so we change `.bin` to `.gz` and we open it.
+`.<.` is a file signature for a `gzip` compression, so we change `.bin` to `.gz` and we open it.
 We find a file and in that file we get the flag
 ```
 Thanks for playing CTF.  
