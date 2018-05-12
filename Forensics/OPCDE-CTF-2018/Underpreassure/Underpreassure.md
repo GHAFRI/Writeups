@@ -25,7 +25,7 @@ It seems like a `file code`, so we take `decode` it again, but this time into a 
 We find a file and in that file we get the flag
 ```
 Thanks for playing CTF.  
-Capturing flags is fun!  Here is your flag:  flag{b33p_b00p_sh00p_da_wh00p}
+Capturing flags is fun!  Here is your flag:  flag{Compr3ssi0n_anD_Enc0dinG_aRe_diFF3r3nt_thiNg5}
 ```
 
 ### What I learned 
