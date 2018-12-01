@@ -2,8 +2,8 @@
 ```
 N/A 
 However the hint was: CRC32
-[CTF-File](https://github.com/GHAFRI/Writeups/blob/master/Forensics/HITB-CTF-EDU/Flag-CRC/flag_0cdc286d10e7ba95570b27e2ead3fc31.zip)
 ```
+[CTF File](https://github.com/GHAFRI/Writeups/blob/master/Forensics/HITB-CTF-EDU/Flag-CRC/flag_0cdc286d10e7ba95570b27e2ead3fc31.zip)
 ## Solution
 
 We were given a zip file that is encrypted with a password. We first run
