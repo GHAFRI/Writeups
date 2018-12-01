@@ -13,7 +13,7 @@ to check for file information, and we recieve
 
 ![1](https://github.com/GHAFRI/Writeups/blob/master/Forensics/HITB-CTF-EDU/Flag-CRC/1.png)
 
-We can see we have a `CRC32` in the given file. After googling CRC cracker, we obtain a `cracker.py` code to run to extract the hidden text from the `CRC32` format.
+We can see we have a `CRC32` in the given file. After googling CRC cracker, we obtain a `cracker.py` from [Zip CRC Cracker](https://github.com/kmyk/zip-crc-cracker) code to extract the hidden text from the `CRC32` format.
 
 ![2](https://github.com/GHAFRI/Writeups/blob/master/Forensics/HITB-CTF-EDU/Flag-CRC/2.png)
 
