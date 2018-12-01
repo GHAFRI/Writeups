@@ -2,6 +2,7 @@
 ```
 N/A 
 However the hint was: CRC32
+[CTF-File](https://github.com/GHAFRI/Writeups/blob/master/Forensics/HITB-CTF-EDU/Flag-CRC/flag_0cdc286d10e7ba95570b27e2ead3fc31.zip)
 ```
 ## Solution
 
