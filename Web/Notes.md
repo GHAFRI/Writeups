@@ -13,6 +13,8 @@ for LFI.
 If `etc/pass` is useless we use then `/proc/self/environ` by `http://website.com:port/files/..%2F..%2F..%2F..%2Fproc%2Fself%2Fenviron`
 Add more %2F inbetween if needed.
 
+## Tomcat Manager
+Apache Tomcat has a `manager`, so inorder to access him we place this at the end of the url `/manager/html`.
 
 ### Tools
 
