@@ -14,7 +14,8 @@ If `etc/pass` is useless we use then `/proc/self/environ` by `http://website.com
 Add more %2F inbetween if needed.
 
 ## Tomcat Manager
-Apache Tomcat has a `manager`, so inorder to access him we place this at the end of the url `/manager/html`.
+Apache Tomcat has a `manager`, so inorder to access him we place this at the end of the url `/manager/html`.  
+If luck still isnt on our side, we add tomcat default credentials too at the begining of the url, such as: `http://tomcat:tomcat@host:proxy/manager/html`
 
 ### Tools
 
