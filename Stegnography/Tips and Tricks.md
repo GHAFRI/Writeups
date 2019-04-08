@@ -1,5 +1,8 @@
 # Set of tips and tricks I used to solve some challanges:
 
+## RBG Planes
+If you have an image opened in `stegsolve` and you see a small portion of it visible in a set of planes like in only `red plane 0`, `blue plane 0` and `green place 0` then you can create a preview regarding those bit planes and find the flag in the header.
+
 ## Whitespace
 if you come across a challange that has white space in it, then its not a couincidence, use this tool:  
 `http://vii5ard.github.io/whitespace/`  
