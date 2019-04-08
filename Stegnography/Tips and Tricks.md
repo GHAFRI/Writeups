@@ -1,5 +1,10 @@
 # Set of tips and tricks I used to solve some challanges:
 
+## Thumbnail:
+If you come accross an image that has a thumbnail using `exiftool` then you can simple extract it using  
+`exiftool -b -ThumbnailImage image.jpg > thumb1.jpg`  
+if the new image also has another thumbnail then repeat the above command.
+
 ## Video that shows text:
 ### There Are 2 ways to solve this:
 ### #1:
