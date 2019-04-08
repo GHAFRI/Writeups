@@ -1,5 +1,10 @@
 # Set of tips and tricks I used to solve some challanges:
 
+## Whitespace
+if you come across a challange that has white space in it, then its not a couincidence, use this tool:  
+`http://vii5ard.github.io/whitespace/`  
+it will save you big time.
+
 ## Thumbnail:
 If you come accross an image that has a thumbnail using `exiftool` then you can simple extract it using  
 `exiftool -b -ThumbnailImage image.jpg > thumb1.jpg`  
