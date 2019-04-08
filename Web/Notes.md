@@ -11,7 +11,7 @@ We break the application by passing an array as the password.
 password[]=
 ```
 
-### Web Upload
+## Web Upload
 
 If we have a LFRU (Local File Remote Upload) we use:
 `http://website.com:port/files/../../../../etc/pass`.
@@ -26,7 +26,6 @@ Add more %2F inbetween if needed.
 Apache Tomcat has a `manager`, so inorder to access him we place this at the end of the url `/manager/html`.  
 If luck still isnt on our side, we add tomcat default credentials too at the begining of the url, such as: `http://tomcat:tomcat@host:proxy/manager/html`
 
-### Tools
 
 ## dirsearch
 
