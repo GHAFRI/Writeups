@@ -1,6 +1,15 @@
-## Notes
+# Tips and Tricks for Web
 
-Some notes to remember for Web.
+
+## PHP []
+When Submit was pressed, a POST request was sent to the server containing:  
+```
+password=yourinput
+```
+We break the application by passing an array as the password.  
+```
+password[]=
+```
 
 ### Web Upload
 
