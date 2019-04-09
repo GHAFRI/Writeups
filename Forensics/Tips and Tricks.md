@@ -1,4 +1,7 @@
 # Tips and tricks for forensics challanges:
+## Binwalk
+### Binwalk All
+`binwalk --dd='.*'`
 ## Grep
 ### Grep Everything
 To `grep flag` from a folder, we use:  
