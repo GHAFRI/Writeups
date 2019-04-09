@@ -1,4 +1,7 @@
 # Tips and tricks for forensics challanges:
+## Compressed Files
+### Gz
+`tar -xvf file.gz`
 ## Binwalk
 ### Binwalk All
 `binwalk --dd='.*'`
