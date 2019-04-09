@@ -1,4 +1,14 @@
 # Tips and Tricks for cryptography:
+## RSA CTF Tool (p= q= e= c=)
+If a problem is given with the above, then your most likely gonna use [rsactftool](https://github.com/Ganapati/RsaCtfTool)
+To activate:  
+```sh
+cd RsaCtfTool
+virtualenv --python=/usr/bin/python2.7 .
+source bin/activate
+python2.7 RsaCtfTool.py
+```
+
 ## OTP or Many Time Pad Attack
 This method can be explained here: [Many Time Pad Attack](https://crypto.stackexchange.com/questions/59/taking-advantage-of-one-time-pad-key-reuse)  
 There are few methods I used to solve this problem:
