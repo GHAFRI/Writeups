@@ -1,4 +1,30 @@
 # Tips and Tricks for cryptography:
+## RSA CTF Tool (flag and pub key)
+If a problem is given with the above, then your most likely gonna use [rsactftool](https://github.com/Ganapati/RsaCtfTool)  
+We first obtain the RSA Private key from the provided `key.pub`  
+There are 2 methods:
+### #1
+```sh
+cd RsaCtfTool
+python2.7 RsaCtfTool.py --publickey key.pub  --private
+```
+We store the RSA Private key in a `private.pem`
+If the flag file is in `base64` we convert it to binary file using:
+```sh
+echo "base64_data" | base64 -d > flag
+```
+Find we decrypt the private key with the flag file to get the flag:
+```sh
+openssl rsautl -decrypt -inkey private.pem -in flag -out flag.txt
+```
+### #2
+With a single line from `rsactftool`:  
+```sh
+cd RsaCtfTool
+python2.7 RsaCtfTool.py --publickey key.pub --uncipherfile flag --verbose --private
+```
+Notice: Flag file should be in binary format.
+
 ## RSA CTF Tool (p= q= e= c=)
 If a problem is given with the above, then your most likely gonna use [rsactftool](https://github.com/Ganapati/RsaCtfTool)
 To activate:  
