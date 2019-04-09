@@ -1,4 +1,7 @@
 # Set of tips and tricks I used to solve some challanges:
+## [Python Steganography](https://pypi.org/project/steganography/0.1.1/)
+I used this tool to solve a challange:  
+`steganography -d file.jpg`
 
 ## RBG Planes
 If you have an image opened in `stegsolve` and you see a small portion of it visible in a set of planes like in only `red plane 0`, `blue plane 0` and `green place 0` then you can create a preview regarding those bit planes and find the flag in the header.
