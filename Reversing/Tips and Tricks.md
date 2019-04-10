@@ -1,4 +1,7 @@
 # Tips and tricks I used when solving reverso:
+## CFF Explorer
+Is a tool that helps in extracting data tables from an executable.
+
 ## Scripts:
 
 ### Simple Flag Scrip #1
