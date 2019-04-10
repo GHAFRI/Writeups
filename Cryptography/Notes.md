@@ -49,6 +49,10 @@ if you come across messy text such as this
 use a good source software such as `cyberchef` to decode it, and the method to do so is using `Base85`  
 
 ## Useful python code:
+### Extract only Upper case from a text file
+```py
+data = ''.join([c for c in data_file if c.isupper()])
+```
 ### Read from a file and store as a string:  
 ```py
 with open('bin.txt','r') as f:
