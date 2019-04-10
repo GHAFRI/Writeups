@@ -1,6 +1,7 @@
 # Tips and Tricks for Web
 
-
+## Robots
+Sometimes you gotta check out for `/robots.txt`
 ## PHP []
 When Submit was pressed, a POST request was sent to the server containing:  
 ```
