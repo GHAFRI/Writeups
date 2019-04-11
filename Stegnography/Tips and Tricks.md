@@ -1,5 +1,8 @@
 # Set of tips and tricks I used to solve some challanges:
 
+## [Jeffrey's Image Metadata Viewer](http://exif.regex.info/exif.cgi)
+A good website that helped me solve a couple of challanges related to text hidden in exif.
+
 ## [XOR TOOL](https://github.com/hellman/xortool)
 If you find an image to be `xor` you can use the `xortool` to decrypt the image, by default use `-c 00`:  
 `xortool -c 00 image.png`  
