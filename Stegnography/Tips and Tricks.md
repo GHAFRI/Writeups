@@ -1,4 +1,11 @@
 # Set of tips and tricks I used to solve some challanges:
+
+## [XOR TOOL](https://github.com/hellman/xortool)
+If you find an image to be `xor` you can use the `xortool` to decrypt the image, by default use `-c 00`:  
+`xortool -c 00 image.png`  
+this will create a folder with decrypted image file if a key is found.
+
+
 ## [Python Steganography](https://pypi.org/project/steganography/0.1.1/)
 I used this tool to solve a challange:  
 `steganography -d file.jpg`
