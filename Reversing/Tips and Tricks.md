@@ -2,6 +2,9 @@
 ## CFF Explorer
 Is a tool that helps in extracting data tables from an executable.
 
+## Conversions:
+### Convert from Hex file to Binary file:
+`xxd -r -p input.txt output.txt`
 ## Scripts:
 
 ### Simple Flag Scrip #1
