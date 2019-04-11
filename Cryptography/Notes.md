@@ -1,4 +1,23 @@
 # Tips and Tricks for cryptography:
+## xortool
+If you find multiple files that have garbage text, then your most likely need to find the probablity using `xortool file`  
+if the probability is `6`, then the key is `\x06`, now use the `script.py` to append all data in files and xor with key: 
+```py
+from pwn import *
+
+data = []
+files = ['file1','file2','file3','file4']
+key = '\x06'
+
+for f in files:
+  x = open(f, 'rb').read()
+  data.append(x)
+
+for x in data:
+  print xor(data, key)
+```
+
+
 ## RSA CTF Tool (flag and pub key)
 If a problem is given with the above, then your most likely gonna use [rsactftool](https://github.com/Ganapati/RsaCtfTool)  
 We first obtain the RSA Private key from the provided `key.pub`  
