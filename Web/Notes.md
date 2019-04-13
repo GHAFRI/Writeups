@@ -2,15 +2,13 @@
 
 ## Robots
 Sometimes you gotta check out for `/robots.txt`
+
+## Website Loopback:
+If a challange asks for Preview a URL, we can use a [Payload](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Request%20Forgery) or a [nip](https://nip.io/) or [loopback](https://qiita.com/shimoju/items/81ed5055d2fec5bb9c1e) to exploit a vulnerability in DNS to get the flag
+
 ## PHP []
-When Submit was pressed, a POST request was sent to the server containing:  
-```
-password=yourinput
-```
-We break the application by passing an array as the password.  
-```
-password[]=
-```
+When Submit was pressed, a POST request was sent to the server containing:  `password=yourinput`
+We break the application by passing an array as the password:  `password[]=`
 
 ## Web Upload
 
