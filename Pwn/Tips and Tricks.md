@@ -1,5 +1,6 @@
 # Tips and tricks used to solve pwn challanges:
-
+## Python Help
+Try using `help(flag)` in python pwn script, maybe it will give you `No Python documentation found for 'flag{flag_here}`
 ## Scripting:
 ### eval()
 `eval()` can help in compution equations without specifiying the terms.
